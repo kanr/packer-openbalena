@@ -1,0 +1,4 @@
+{
+    "ami_base": "ami-1234",
+    "ami_name": "centos 8"
+}

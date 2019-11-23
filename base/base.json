@@ -1,0 +1,30 @@
+{
+    "description": "Packer Open-Balena Build",
+    "_comment": "Root level Comment : Ubuntu 18.04",
+    "variables": {
+        "_comment": "override these with a variables.json file",
+        "ami_base": "ami-1234",
+        "ami_name": "Ubuntu 18.04",
+        "ami_sha": "{{env `SHA`}}"
+    },
+    "builders": [
+
+    ],
+    "post-processors": [
+        {
+            "_comment": "output",
+            "output": "manifest-base.json",
+            "strip-path": true, 
+            "type": "manifest"
+        }
+    ],
+    "provisioners": [
+        {
+            "inline": [
+                "echo \"starting provisioning \"; sleep 1; done"
+            ],
+            "type": "shell"
+        }
+    ]
+
+}

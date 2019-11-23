@@ -1,0 +1,3 @@
+[submodule "opebalena"]
+	path = opebalena
+	url = https://github.com/balena-io/open-balena.git
